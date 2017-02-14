@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="dby-kz-5yi">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Cloth StoreVC-->
+        <scene sceneID="nYF-7e-P34">
+            <objects>
+                <viewController id="uRI-sn-G23" customClass="ClothStoreVC" customModule="ClothStore" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Y0L-fn-YFD"/>
+                        <viewControllerLayoutGuide type="bottom" id="26v-NJ-EPQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pkd-FK-yjZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ygh-en-FZv" userLabel="ClothesCollectionView">
+                                <rect key="frame" x="0.0" y="34" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.0" green="0.25098040700000002" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="608-gg-11E">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" adjustsImageWhenDisabled="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D0w-su-xxo" userLabel="toGrid">
+                                <rect key="frame" x="283" y="72" width="76" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.94568806100000002" green="1" blue="0.49558116229999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <state key="normal" title="GRID">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <state key="selected" title="LIST">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="listGridOnClick:" destination="uRI-sn-G23" eventType="touchUpInside" id="j0G-XG-ocq"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ygh-en-FZv" firstAttribute="width" secondItem="Pkd-FK-yjZ" secondAttribute="width" id="1H6-nD-XEr"/>
+                            <constraint firstItem="ygh-en-FZv" firstAttribute="height" secondItem="Pkd-FK-yjZ" secondAttribute="height" id="PRI-Lm-32u"/>
+                            <constraint firstItem="ygh-en-FZv" firstAttribute="centerY" secondItem="Pkd-FK-yjZ" secondAttribute="centerY" id="VxC-wu-1Uj"/>
+                            <constraint firstItem="ygh-en-FZv" firstAttribute="centerX" secondItem="Pkd-FK-yjZ" secondAttribute="centerX" id="vec-A6-UxE"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="lf2-6A-5vL"/>
+                    <connections>
+                        <outlet property="clothesCollectionView" destination="ygh-en-FZv" id="2fj-l4-846"/>
+                        <outlet property="listGridToggle" destination="D0w-su-xxo" id="z1N-u4-CXa"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XYv-vZ-sd6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="960.79999999999995" y="106.59670164917542"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="8Tm-xA-Noq">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dby-kz-5yi" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mqX-iU-qcO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="uRI-sn-G23" kind="relationship" relationship="rootViewController" id="MAT-b6-ppN"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PHp-Zm-A88" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21.600000000000001" y="106.59670164917542"/>
+        </scene>
+    </scenes>
+</document>

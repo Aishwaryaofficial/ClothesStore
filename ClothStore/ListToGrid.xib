@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2657" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ListToGrid" customModule="ClothStore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fF8-be-Hxi">
+                        <rect key="frame" x="23" y="25" width="100" height="100"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="rvV-j5-xaT"/>
+                            <constraint firstAttribute="width" secondItem="fF8-be-Hxi" secondAttribute="height" multiplier="1:1" id="w6D-kP-lGE"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2TH-CC-Lfm">
+                        <rect key="frame" x="155" y="67.5" width="200" height="16"/>
+                        <color key="backgroundColor" white="0.96999999999999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="200" id="XnB-6i-1ZC"/>
+                            <constraint firstAttribute="height" constant="16" id="vAT-3g-UPf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="2TH-CC-Lfm" secondAttribute="trailing" constant="20" id="1on-IM-3Lc"/>
+                <constraint firstItem="fF8-be-Hxi" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="Yre-70-TMl"/>
+                <constraint firstItem="2TH-CC-Lfm" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="hpy-yd-5qK"/>
+                <constraint firstItem="fF8-be-Hxi" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="23" id="s1C-dJ-CHl"/>
+            </constraints>
+            <connections>
+                <outlet property="gridImageView" destination="fF8-be-Hxi" id="fOR-IT-aTh"/>
+                <outlet property="gridLabel" destination="2TH-CC-Lfm" id="T7r-Lv-AnH"/>
+            </connections>
+            <point key="canvasLocation" x="27" y="49"/>
+        </collectionViewCell>
+    </objects>
+</document>
