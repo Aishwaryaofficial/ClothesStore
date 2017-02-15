@@ -23,6 +23,11 @@ class ListToGrid: UICollectionViewCell {
         gridImageView.image = data.image
     }
 
-    
+    override func prepareForReuse() {
+       super.prepareForReuse()
+        gridLabel.text = ""
+        gridImageView.image = nil
+        
+    }
 
 }

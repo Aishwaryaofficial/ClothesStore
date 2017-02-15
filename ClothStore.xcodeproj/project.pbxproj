@@ -16,6 +16,8 @@
 		0C5B77B91E51C21800F0DF58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C5B77B81E51C21800F0DF58 /* Assets.xcassets */; };
 		0C5B77BC1E51C21800F0DF58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C5B77BA1E51C21800F0DF58 /* LaunchScreen.storyboard */; };
 		0C5B77C41E51C26700F0DF58 /* ClothStoreVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C5B77C31E51C26700F0DF58 /* ClothStoreVC.swift */; };
+		0C84C2AD1E530F81001EBB21 /* ProductGridFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C84C2AC1E530F81001EBB21 /* ProductGridFlowLayout.swift */; };
+		0C84C2AF1E530F8B001EBB21 /* ProductListFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C84C2AE1E530F8B001EBB21 /* ProductListFlowLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		0C5B77BB1E51C21800F0DF58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0C5B77BD1E51C21800F0DF58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C5B77C31E51C26700F0DF58 /* ClothStoreVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClothStoreVC.swift; sourceTree = "<group>"; };
+		0C84C2AC1E530F81001EBB21 /* ProductGridFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductGridFlowLayout.swift; sourceTree = "<group>"; };
+		0C84C2AE1E530F8B001EBB21 /* ProductListFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductListFlowLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +66,8 @@
 		0C5B77B01E51C21800F0DF58 /* ClothStore */ = {
 			isa = PBXGroup;
 			children = (
+				0C84C2AE1E530F8B001EBB21 /* ProductListFlowLayout.swift */,
+				0C84C2AC1E530F81001EBB21 /* ProductGridFlowLayout.swift */,
 				0C5B77B11E51C21800F0DF58 /* AppDelegate.swift */,
 				0C05E99C1E52CDF30013747F /* GridToList.swift */,
 				0C05E99D1E52CDF30013747F /* GridToList.xib */,
@@ -152,6 +158,8 @@
 			files = (
 				0C05E99A1E52CBDB0013747F /* ListToGrid.swift in Sources */,
 				0C5B77B21E51C21800F0DF58 /* AppDelegate.swift in Sources */,
+				0C84C2AD1E530F81001EBB21 /* ProductGridFlowLayout.swift in Sources */,
+				0C84C2AF1E530F8B001EBB21 /* ProductListFlowLayout.swift in Sources */,
 				0C5B77C41E51C26700F0DF58 /* ClothStoreVC.swift in Sources */,
 				0C05E99E1E52CDF30013747F /* GridToList.swift in Sources */,
 			);
