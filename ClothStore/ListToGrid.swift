@@ -9,13 +9,27 @@
 import UIKit
 
 class ListToGrid: UICollectionViewCell {
+    
+    // MARK: @IBOutlet
+    
     @IBOutlet weak var gridLabel: UILabel!
     @IBOutlet weak var gridImageView: UIImageView!
+    
+    // MARK: CELL LIFE CYCLE
 
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
+    
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        gridLabel.text = ""
+        gridImageView.image = nil
+        
+    }
+
+    // MARK: @PRIVATE FUNCTION
     
     func populateWithData(_ data: Model)
     {
@@ -23,11 +37,5 @@ class ListToGrid: UICollectionViewCell {
         gridImageView.image = data.image
     }
 
-    override func prepareForReuse() {
-       super.prepareForReuse()
-        gridLabel.text = ""
-        gridImageView.image = nil
-        
-    }
-
+   
 }
